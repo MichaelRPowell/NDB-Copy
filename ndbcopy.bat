@@ -1,5 +1,6 @@
 ::Backup NDB Files
-robocopy \\remote\NDB D:\NDB.Backups /MIR /W:30 /R:5000
+robocopy \\remote\NDB D:\NDB.Backups\Remote /MIR /W:30 /R:5000
+robocopy C:\Program\NDB D:\NDB.Backups\Local /MIR /W:30 /R:5000
 
 ::Copy NDB Files to Remote
 robocopy D:\NDB \\remote\NDB /MIR /W:30 /R:5000
